@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://twitter.com/piyusepriya" target="blank"><img src="https://img.shields.io/twitter/follow/piyusepriya?logo=twitter&style=for-the-badge" alt="piyusepriya" /></a> </p>
 
-- 🌱 I’m still learning **Djnago**
+- 🌱 I’m still learning **Django**
 
 - 💬 Ask me about **React,Nextjs**
 
