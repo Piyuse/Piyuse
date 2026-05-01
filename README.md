@@ -1,22 +1,136 @@
-<h1 align="center">Hi 👋, I'm Priya Piyuse</h1>
-<h3 align="center">A passionate Webdeveloper developer from India</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Card</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=piyuse" alt="piyuse" /></a> </p>
+    body {
+      background: #050505;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+    }
 
-<p align="left"> <a href="https://twitter.com/piyusepriya" target="blank"><img src="https://img.shields.io/twitter/follow/piyusepriya?logo=twitter&style=for-the-badge" alt="piyusepriya" /></a> </p>
+    .card {
+      background: #0f0f0f;
+      border: 0.5px solid #2e2e2e;
+      border-radius: 16px;
+      padding: 2rem;
+      width: 360px;
+    }
 
-- 🌱 I’m still learning **Django**
+    .card h2 {
+      font-size: 22px;
+      font-weight: 500;
+      color: #f0f0f0;
+      margin-bottom: 0.25rem;
+    }
 
-- 💬 Ask me about **React,Nextjs**
+    .card p.bio {
+      font-size: 15px;
+      color: #888;
+      line-height: 1.7;
+      margin-bottom: 0.4rem;
+    }
 
-- 📫 How to reach me **priyapiyuse@gmail.com**
+    .card p.tagline {
+      font-size: 13px;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://twitter.com/piyusepriya" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="piyusepriya" height="30" width="40" /></a>
-</p>
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://appwrite.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/appwriteio/appwriteio-icon.svg" alt="appwrite" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
+    .link-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      background: #1a1a1a;
+      border: 0.5px solid #2e2e2e;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=piyuse&show_icons=true&locale=en&layout=compact" alt="piyuse" /></p>
+    .link-item:hover {
+      background: #222;
+      border-color: #444;
+    }
+
+    .link-item .icon {
+      flex-shrink: 0;
+    }
+
+    .link-item .info .label {
+      font-size: 11px;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2px;
+    }
+
+    .link-item .info .value {
+      font-size: 14px;
+      font-weight: 500;
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h2>Hi there!</h2>
+    <p class="bio">Working in data implementation</p>
+    <p class="tagline">Discuss me with system architecture and building cool stuffs</p>
+
+    <div class="links">
+
+      <!-- Email -->
+      <a href="mailto:priyapiyuse@gmail.com" class="link-item">
+        <div class="icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="4" width="20" height="16" rx="2" stroke="#f09595" stroke-width="1.5"/>
+            <path d="M2 7l10 7 10-7" stroke="#f09595" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="info">
+          <p class="label">Email</p>
+          <p class="value">priyapiyuse@gmail.com</p>
+        </div>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" class="link-item">
+        <div class="icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="24" rx="4" fill="#2563a8"/>
+            <path d="M7 9h2v8H7V9zm1-2.5A1.25 1.25 0 1 1 8 9a1.25 1.25 0 0 1 0-2.5zM11 9h2v1.1c.4-.7 1.2-1.1 2-1.1 2 0 3 1.3 3 3.3V17h-2v-4.5c0-1-.4-1.5-1.2-1.5-.9 0-1.8.6-1.8 2V17h-2V9z" fill="white"/>
+          </svg>
+        </div>
+        <div class="info">
+          <p class="label">LinkedIn</p>
+          <p class="value">Connect with me</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+</body>
+</html>
